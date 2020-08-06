@@ -19,6 +19,11 @@ public class HeadsorTails {
       else countT++;
     }
     System.out.println("Heads: " + countH + ", Tails: " + countT);
+
+    if(countH > countT){
+        System.out.println("You won!");
+      }
+      else System.out.println("You lose!");
   }
 
 }
