@@ -5,6 +5,10 @@ public class HeadsorTails {
   public static void main(String[] args) {
     String[] CoinsSurface = { "Heads", "Tails" };
     Random a = new Random();
+
+    System.out.println("Who are you?");
+    String name = new java.util.Scanner(System.in).nextLine();
+    System.out.println("Hello, " + name + "!");
     
     System.out.println("Tossing a coin...");
     int countH = 0;
@@ -21,9 +25,9 @@ public class HeadsorTails {
     System.out.println("Heads: " + countH + ", Tails: " + countT);
 
     if(countH > countT){
-        System.out.println("You won!");
+        System.out.println(name + " won!");
       }
-      else System.out.println("You lose!");
+      else System.out.println(name + " lose!");
   }
 
 }
